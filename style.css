@@ -26,7 +26,7 @@ body {
     color: white;
     background-color: #91b3e1 ;
     padding: 3px;
-    border-radius: 20px;
+    border-radius: 10px 0 0 10px ;
 }
 .nav a:hover {
     background-color:  #f0958f;
@@ -108,11 +108,42 @@ footer { width: 100%;
 }
 
 /*Clases*/
-.clases {
+.contenedor {
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 100px;
 }
-.clases img {
+.clases-logo {
+    display: flex;
+    padding: 10px;
+}
+.clases-logo h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.clases-logo img {
     display: flex;
     flex-direction: column;
     width: 50px;
+}
+
+.descripcion li {
+    font-weight: bold;
+}
+
+.items-clases {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+   text-align: center;
+   gap: 5px;
+    
+}
+
+.items-clases img{
+   width: 100px;
 }
