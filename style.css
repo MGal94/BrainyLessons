@@ -26,45 +26,6 @@ body {
   margin: 5px;
   color: var(--azul);
 }
-.title {
-  color: var(--negro);
-  font-weight: 300;
-}
-/*Estilos nav*/
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 5px;
-  padding: 5px;
-}
-.menu {
-  display: flex;
-  width: 100vh;
-  justify-content: space-around;
-}
-
-.nav a {
-  text-decoration: none;
-  color: var(--azul);
-}
-.nav a:hover {
-  background-color: var(--rosa_claro);
-  transition: 0.5s;
-  border-radius: 0px 20px 20px 0px;
-  padding: 0 15px;
-}
-.logo img {
-  width: 100px;
-  display: flex;
-  flex-direction: row;
-}
-.logo-menu {
-  color: var(--azul);
-  font-size: 25px;
-}
 /*Estilos footer */
 footer {
   width: 100%;
@@ -77,6 +38,52 @@ footer {
   padding: 10px;
 }
 
+/* titulos */
+.title {
+  display: flex;
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin: 10px;
+  background-color: var(--rosa_claro);
+  justify-content: center;
+  color: var(--negro);
+  font-weight: 500;
+}
+/*Estilos nav*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--azul);
+}
+.nav a:hover {
+  background-color: var(--rosa_claro);
+  transition: 0.5s;
+  border-radius: 0px 20px 20px 0px;
+  padding: 0 15px;
+}
+.menu {
+  display: flex;
+  width: 100vh;
+  justify-content: space-around;
+}
+.logo img {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.logo-menu {
+  color: var(--azul);
+  font-size: 25px;
+}
+
 /* Banner welcome */
 .welcome h1 {
   display: flex;
@@ -87,60 +94,27 @@ footer {
   text-shadow: 6px 5.5px var(--rosa_claro);
   margin-bottom: 30px;
 }
-/* titulos */
-.title {
-  display: flex;
-  border-radius: 20px;
-  padding: 3px 10px;
-  margin: 10px;
-  background-color: var(--rosa_claro);
-  justify-content: center;
-}
-/* About me */
-.cursos {
+
+/* Cursos */
+/* .cursos {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
   padding: 10px;
-}
-
-.about-me {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 800px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-me p {
-  margin: 10px;
-}
-.ana {
-  display: flex;
-  max-width: 300px;
-  width: 90vh;
-  border-radius: 100%;
-  margin: auto;
-  padding: 1rem;
-}
-
-/* Cursos */
+} */
 .cursos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 .cursos img {
   display: flex;
   flex-wrap: nowrap;
-  width: 90%;
-  margin: 5px;
+  max-width: 350px;
+  margin: 0 auto;
 }
 .items {
   display: flex;
@@ -166,7 +140,7 @@ footer {
   transition: all 0.9s;
 }
 .item:hover {
-  box-shadow: 0 10px 20px var(--celeste);
+  box-shadow: 0 10px 20px var(--azul);
 }
 .item img {
   width: 100%;
@@ -178,6 +152,30 @@ footer {
 .item figure {
   overflow: hidden;
 }
+/* About me */
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-me p {
+  margin: 10px;
+}
+.ana {
+  display: flex;
+  max-width: 300px;
+  width: 90vh;
+  border-radius: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
 /* Estilos contacto */
 .contacto {
   min-width: 100%;
@@ -224,7 +222,6 @@ footer {
   border-radius: 10px;
   border-style: none;
 }
-
 .conteiner-login button {
   background-color: var(--rosa_claro);
   border-style: none;
@@ -235,14 +232,12 @@ footer {
   font-size: 14px;
   color: var(--blanco_texto);
 }
-
 .conteiner-login a {
   text-decoration: none;
   color: var(--azul);
   font-size: 12px;
   margin-top: 10px;
 }
-
 .conteiner {
   display: flex;
   align-items: center;
