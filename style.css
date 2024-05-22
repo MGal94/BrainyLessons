@@ -104,7 +104,9 @@ footer {
   color: var(--azul);
   font-size: 25px;
 }
-
+.active {
+  transform: translateX(0);
+}
 /* Banner welcome */
 .welcome h1 {
   display: flex;
@@ -121,8 +123,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  /* margin-top: 30px;
   padding: 10px;
+  padding-bottom: 2rem; */
 }
 .cursos img {
   display: flex;
@@ -133,13 +136,15 @@ footer {
 .items {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
+
 .cursos a {
   background-color: var(--celeste);
   text-decoration: none;
   border-radius: 20px;
   padding: 5px 15px;
-  margin: 10px;
+  margin-top: 2rem;
   color: var(--blanco_texto);
   text-align: center;
 }
@@ -169,7 +174,6 @@ footer {
 .about-me {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
   max-width: 800px;
   margin: auto;
   align-items: center;
@@ -181,11 +185,8 @@ footer {
 }
 .ana {
   display: flex;
-  max-width: 300px;
-  width: 90vh;
-  border-radius: 100%;
+  max-width: 350px;
   margin: auto;
-  padding: 1rem;
 }
 
 /* Estilos contacto */
@@ -194,6 +195,7 @@ footer {
   display: flex;
   justify-content: center;
   margin: 10px;
+  padding-bottom: 50px;
 }
 .contacto a {
   text-decoration: none;
@@ -214,7 +216,6 @@ footer {
 /*Testimonios*/
 .testimonios {
   display: flex;
-  padding-bottom: 50px;
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
@@ -235,7 +236,9 @@ footer {
 .testimonio-card-mensaje {
   align-items: center;
   padding-top: 0.5rem;
+  font-style: italic;
 }
+
 /* login */
 
 .conteiner-login {
@@ -297,6 +300,13 @@ footer {
 
 /* MediaQuerie */
 @media (min-width: 1000px) {
+  section {
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   .cursos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
@@ -316,5 +326,14 @@ footer {
 
   .logo-menu {
     display: none;
+  }
+
+  /*Testimonios*/
+  .testimonios {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
   }
 }
