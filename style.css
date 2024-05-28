@@ -94,7 +94,11 @@ footer {
   transform: translateX(200%);
   position: absolute;
   transition: all 0.5s ease-in-out;
+  margin: auto 0;
+  padding-top: 100px;
+  padding-bottom: 10px;
 }
+
 .logo img {
   width: 100px;
   display: flex;
@@ -104,8 +108,15 @@ footer {
   color: var(--azul);
   font-size: 25px;
 }
-.active {
+.menu-show {
   transform: translateX(0);
+}
+.cruz-menu {
+  display: none;
+}
+.cruz-show {
+  display: contents;
+  transition: all 0.5s ease-in-out;
 }
 /* Banner welcome */
 .welcome h1 {
@@ -116,6 +127,7 @@ footer {
   color: var(--celeste);
   text-shadow: 6px 5.5px var(--rosa_claro);
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 /* Cursos */
@@ -123,9 +135,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 30px;
-  padding: 10px;
-  padding-bottom: 2rem; */
 }
 .cursos img {
   display: flex;
